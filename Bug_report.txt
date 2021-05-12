@@ -1,0 +1,20 @@
+Bug Report
+
+Login page: The button 'Submit' is shifted to the right
+
+Description
+*Steps to reproduce:*
+
+Open the login page http://itcareer.pythonanywhere.com/
+
+*Expected result:* The button 'Submit' should be in the middle
+
+*Actual result:* The button 'Submit' is shifted to the right
+
+*Environment*
+Windows 10
+Google Chrome v.90.0.4430.93
+
+>============================================================
+
+
