@@ -25,63 +25,129 @@ Password
 Должно быть поле на подтверждение пароля.
 
 ======СHECKLIST======
-Environment |Google Chrome v.90.0.4430.212, (64 бит)|
-===Проверка поля Name (позитивное тестирование)===
-Проверка поля Name (позитивное тестирование)				
-8	Проверка правильности написания подсказки в поле Name		В поле "Name" высвечивается подсказка "Name?"	FAIL
-9	Ввести имя латинскими буквами	Albina	Success!	PASS
-10	Ввести имя с цифрами	Albina040	Success!	PASS
-11	Ввести имя с допустимым спецсимволом "-"	Albina-040	Success!	PASS
-12	Ввести имя с допустимым спецсимволом  "_"	Albina_040	Success!	PASS
-13	Ввести имя с пробелом	Alla Victoria	Success!	PASS
-14	Ввести имя, содержащее 2 символа	Li	Появляется сообщение "Error: Error: All Fields are Required"	FAIL
-15	Ввести имя, содержащее 256 символа	AlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbi	Появляется сообщение "Error: Error: All Fields are Required"	FAIL
-16	Ввести имя в верхнем регистре	ALBINA	Success!	PASS
-17	Ввести имя в нижнем регистре	albina	Success!	PASS
-18	Ввести имя с помощью CTRL+C, CTRL+V	Albina	Success!	PASS
-Проверка поля Name (негативное тестирование)				
-19	Оставить поле пустым и проверить на появление красной рамки поля и сообщения “This field is required”		ничего не появляется	PASS
-20	Оставить поле пустым		Success!	PASS
-21	Ввести в поле один символ	L	Error!	PASS
-22	Ввести имя на кириллице	Альбина	Success!	FAIL
-23	Ввести имя с цифрой в начале	1Albina	Success!	FAIL
-24	Ввести имя со спецсимволом в начале	.Albina	Success!	FAIL
-25	Ввести имя со спецсимволами в начале и в конце	.Albina.	Success!	FAIL
-26	Ввести имя со спецсимволом	Albina@	Success!	FAIL
-27	Ввести в поле только цифры	123456789	Success!	FAIL
-28	Ввести только пробелы		Success!	FAIL
-29	Ввести в поле только символы	#$#$#$#	Success!	FAIL
-30	Ввести в поле 255 символов	AlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlb	Error!	FAIL
-31	Ввести в поле 257 символов	AlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbin	Error!	PASS
-32	Ввести в поле Name скрипт <script>alert(123)</script>	 <script>alert(123)</script>	Error!	PASS
-Проверка поля Surname (позитивное тестирование)				
-33	Проверка правильности написания подсказки в поле Surname		В поле "Surname" высвечивается подсказка "Surname?"	FAIL
-34	Проверка правильности написания названия поля Surname		Название поля высвечивается как "Surame"	FAIL
-35	Ввести фамилию латинскими буквами	Alimova	Success!	PASS
-36	Ввести фамилию с цифрами	Alimova101	Success!	PASS
-37	Ввести фамилию с допустимым спецсимволом "-"	Alimova-101	Success!	PASS
-38	Ввести фамилию с допустимым спецсимволом  "_"	Albina_040	Success!	PASS
-39	Ввести фамилию с пробелом	Smit Low	Success!	PASS
-40	Ввести фамилию, содержащую 2 символа	Al	Error!	FAIL
-41	Ввести фамилию, содержащую 256 символа	AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlim	Success!	PASS
-42	Проверить сообщение об успешной регистрации	AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlim	Success! Hello: AllaVictoria AlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbi	FAIL
-43	Ввести фамилию в верхнем регистре	ALIMOVA	Success!	PASS
-44	Ввести фамилию в нижнем регистре	alimova	Success!	PASS
-45	Ввести фамилию с помощью CTRL+C, CTRL+V	Alimova	Success!	PASS
-Проверка поля Surname (негативное тестирование)				
-46	Оставить поле пустым и проверить на появление красной рамки поля и сообщения “This field is required”		ничего не появляется	PASS
-47	Оставить поле пустым		Error!	PASS
-48	Ввести в поле один символ	A	Success!	FAIL
-49	Ввести имя на кириллице	Алимова	Success!	FAIL
-50	Ввести имя с цифрой в начале	1Alimova	Success!	FAIL
-51	Ввести имя со спецсимволом в начале	.Alimova	Success!	FAIL
-52	Ввести имя со спецсимволами в начале и в конце	.Alimova.	Success!	FAIL
-53	Ввести имя со спецсимволом	Alimova@	Success!	FAIL
-54	Ввести в поле только цифры	123456789	Success!	FAIL
-55	Ввести только пробелы	Error!	PASS
-56	Ввести в поле только символы	#$#$#$#	Success!	FAIL
-57	Ввести в поле 255 символов	AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAli	Success!	PASS
-58	Ввести в поле 257 символов	AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimo	Success!	FAIL
-59	Ввести в поле Name скрипт <script>alert(123)</script>	 <script>alert(123)</script>	Success!	FAIL
-			
-
+-
+Environment Windows 10; Google Chrome v. 90.0.4430.212, (64 бит)
+Test date 14.05.2021
+Tester Albina Alimova
+Site http://itcareer.pythonanywhere.com/
+-
+Checklist				
+№ | Description | Input data | Visual results | Status
+1 Ввести корректные данные во все поля, нажать на кнопку "Submit"	| "Name: Alla-Victoria;
+Surname: Nikolaeva; Email: alla_victoria@email.com; Password: 12345Aa" | Рамка поля становится голубой и появляется сообщение "Success! Hello: Alla-Victoria Nikolaeva"	| PASS
+2 Оставить все поля пустыми | "Name: Surname: Email: Password: " | Рамка поля становится красной и появляется сообщение "Error: Error: All Fields are Required"	| PASS
+3 Проверка правильности написания сообщения в красной рамке при оставлении полей пустыми "Name: Surname: Email: Password: | "Появляется сообщение "Error: Error: All Fields are Required" | FAIL
+4 Проверка правильности написания подсказки в поле Password | В поле "Name" высвечивается подсказка "Enter a password." | PASS
+5 Проверка кнопки Submit | Кнопка "Submit" смещена вправо | FAIL
+6 Проверка исчезновения сообщения "Error: Error: All Fields are Required" при обновлении страницы | Сообщение "Error: Error: All Fields are Required" не исчезает | FAIL
+======Проверка поля Name (позитивное тестирование)======				
+7 Проверка правильности написания подсказки в поле Name | В поле "Name" высвечивается подсказка "Name?" | FAIL
+8 Проверка валидационного сообщения для поля Name | FAIL
+9 Ввести имя латинскими буквами	Albina | Success! | PASS
+10 Ввести имя с цифрами	Albina040 | Success! | PASS
+11 Ввести имя с допустимым спецсимволом "-" | Albina-040 | Success! | PASS
+12 Ввести имя с допустимым спецсимволом  "_" | Albina_040 | Success! | PASS
+13 Ввести имя с пробелом | Alla Victoria | Success! | PASS
+14 Ввести имя, содержащее 2 символа | Li | Появляется сообщение "Error: Error: All Fields are Required" | FAIL
+15 Ввести имя, содержащее 256 символа | AlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbi | Появляется сообщение "Error: Error: All Fields are Required" | FAIL
+16 Ввести имя в верхнем регистре | ALBINA | Success! | PASS
+17 Ввести имя в нижнем регистре | albina | Success! | PASS
+18 Ввести имя с помощью CTRL+C, CTRL+V | Albina | Success! | PASS
+======Проверка поля Name (негативное тестирование)======				
+19 Оставить поле пустым и проверить на появление красной рамки поля и сообщения “This field is required” | ничего не появляется | PASS
+20 Оставить поле пустым | Success! | PASS
+21 Ввести в поле один символ | L | Error! | PASS
+22 Ввести имя на кириллице | Альбина | Success! | FAIL
+23 Ввести имя с цифрой в начале | 1Albina | Success! | FAIL
+24 Ввести имя со спецсимволом в начале | .Albina | Success! | FAIL
+25 Ввести имя со спецсимволами в начале и в конце | .Albina. | Success! | FAIL
+26 Ввести имя со спецсимволом | Albina@ | Success! | FAIL
+27 Ввести в поле только цифры | 123456789 | Success! | FAIL
+28 Ввести только пробелы | Success! | FAIL
+29 Ввести в поле только символы | #$#$#$# | Success! | FAIL
+30 Ввести в поле 255 символов | AlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlb | Error! | FAIL
+31 Ввести в поле 257 символов | AlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbinaAlbin | Error! | PASS
+32 Ввести в поле Name скрипт <script>alert(123)</script> | <script>alert(123)</script> | Error! | PASS
+======Проверка поля Surname (позитивное тестирование)======				
+33 Проверка правильности написания подсказки в поле Surname | В поле "Surname" высвечивается подсказка "Surname?" | FAIL
+34 Проверка правильности написания названия поля Surname | Название поля высвечивается как "Surame" | FAIL
+35 Проверка валидационного сообщения для поля Surname | FAIL
+36 Ввести фамилию латинскими буквами | Alimova | Success! | PASS
+37 Ввести фамилию с цифрами | Alimova101 | Success! | PASS
+38 Ввести фамилию с допустимым спецсимволом "-" | Alimova-101 | Success! | PASS
+39 Ввести фамилию с допустимым спецсимволом  "_" | Albina_040 | Success! | PASS
+40 Ввести фамилию с пробелом | Smit Low | Success! | PASS
+41 Ввести фамилию, содержащую 2 символа | Al | Error! | FAIL
+42 Ввести фамилию, содержащую 256 символа | AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlim | Success! | PASS
+43 Проверить сообщение об успешной регистрации | AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlim | Success! Success! Hello: AllaVictoria AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlim | FAIL
+44 Ввести фамилию в верхнем регистре | ALIMOVA | Success! | PASS
+45 Ввести фамилию в нижнем регистре | alimova | Success! | PASS
+46 Ввести фамилию с помощью CTRL+C, CTRL+V | Alimova | Success! | PASS
+======Проверка поля Surname (негативное тестирование)======				
+47 Оставить поле пустым и проверить на появление красной рамки поля и сообщения “This field is required” | ничего не появляется | PASS
+48 Оставить поле пустым | Error! | PASS
+49 Ввести в поле один символ | A | Success! | FAIL
+50 Ввести имя на кириллице | Алимова | Success! | FAIL
+51 Ввести имя с цифрой в начале | 1Alimova | Success! | FAIL
+52 Ввести имя со спецсимволом в начале | .Alimova | Success! | FAIL
+53 Ввести имя со спецсимволами в начале и в конце | .Alimova. | Success! | FAIL
+54 Ввести имя со спецсимволом | Alimova@ | Success! | FAIL
+55 Ввести в поле только цифры | 123456789 | Success! | FAIL
+56 Ввести только пробелы | Error! | PASS
+57 Ввести в поле только символы | #$#$#$# | Success! | FAIL
+58 Ввести в поле 255 символов | AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAli | Success! | PASS
+59 Ввести в поле 257 символов | AlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimovaAlimo | Success! | FAIL
+60 Ввести в поле Surname скрипт <script>alert(123)</script> | <script>alert(123)</script> | Success! | FAIL
+======Проверка поля Email (позитивное тестирование)======				
+61 Проверка правильности написания подсказки в поле адреса эл. почты | В поле "Email" высвечивается подсказка "Youe email address." | FAIL
+62 Проверка валидационного сообщения для поля email | FAIL
+63 Ввести адрес эл. почты латинскими буквами | Testexample@email.com | Success! | PASS
+64 Ввести адрес эл. почты цифрами в начале локальной части | 123testexample@email.com | Success! | PASS
+65 Ввести адрес эл. почты с цифрами в локальной части | testexample123@email.com | Success! | PASS
+66 Ввести адрес эл. почты сo cпецсимволом "-" в локальной части | test-example@email.com | Success! | PASS
+67 Ввести адрес эл. почты сo cпецсимволом "_" в локальной части | test_example@email.com | Success! | PASS
+68 Ввести адрес эл. почты сo cпецсимволом "." в локальной части | test.example@email.com | Success! | PASS
+69 Ввести адрес эл. почты сo cпецсимволом "-" в доменной части | testexample@e-mail.com | Success! | PASS			
+70 Ввести адрес эл. почты на латинском в нижнем регистре | testexample@email.com | Success! | PASS
+71 Ввести адрес эл. почты c пробелом | test example@email.com | Success! | PASS
+72 Ввести адрес эл. почты сo cпецсимволами: с последовательными точками ".." заключенными в кавычки | "Test..Example"@example.com | Success! | PASS
+73 Ввести фамилию с помощью CTRL+C, CTRL+V | testexample@email.com | Success! | PASS
+======Проверка поля Email (негативное тестирование)======				
+74 Оставить поле пустым | Success! | FAIL
+75 Ввести адрес эл. почты кириллицей | тестпример@пример.ком | Success! | FAIL
+76 Ввести адрес эл. почты кириллицей в доменной части | testexample@пример.ком | Success! | FAIL
+77 Ввести адрес эл. почты кириллицей в локальной части | тестпример@email.com | Success! | FAIL
+78 Ввести адрес эл. почты без символа @ | testexampleemail.com | Success! | FAIL
+79 Ввести адрес эл. почты с двумя символами @@ | testexample@@email.com | Success! | FAIL
+80 Ввести адрес эл. Почты со спецсимволом "." в начале | .testexample@email.com | Success! | FAIL
+81 Ввести адрес эл. почты со спецсимволом "." в конце  | testexample@email.com. | Success! | FAIL
+82 Ввести в поле эл. адреса только пробелы | Success! | FAIL
+83 Ввести адрес эл. почты на латинском в верхнем регистрe | TESTEXAMPLE@email.com | Success! | FAIL
+84 Ввести адрес эл. почты на латинском в верхнем регистрe | testexample@EMAIL.COM | Success! | FAIL
+85 Ввести адрес эл. почты цифрами | 1234567@email.com | Success! | FAIL
+86 Ввести в поле Email скрипт <script>alert(123)</script> | <script>alert(123)</script> | Success! | FAIL
+======Проверка поля Password (позитивное тестирование)======				
+87 Проверка правильности написания подсказки в поле password | Enter a password! | PASS
+88 Проверка валидационного сообщения для поля password | FAIL
+89 Проверка наличия поля подтверждения пароля | отсутствует | FAIL
+90 Ввести пароль, содержащий: заглавную букву, строчные буквы и цифру | Tester1 | Success! | PASS
+91 Ввести пароль длиной в 5 символов содержащий: 1 заглавную букву, 2 строчные и 2 цифры | Tes12 | Success! | PASS
+92 Ввести пароль длиной в 16 символов содержащий: заглавную, строчные буквы и цифры | Тesttesttestte12 | Success! | PASS
+93 Ввести пароль в поле password с помощью CTRL+C, CTRL+V | Tester1 | Success! | PASS
+======Проверка поля Password (позитивное тестирование)======				
+94 Оставить поле пустым | Success! | FAIL
+95 Ввести пароль, содержащий буквы латиницей в верхнем регистре | TESTER | Success! | FAIL
+96 Ввести пароль, содержащий буквы латиницей в нижнем регистре | tester | Success! | FAIL
+97 Ввести пароль, содержащий латинские буквы: заглавная и строчные | Tester | Success! | FAIL
+98 Ввести пароль, содержащий строчные латинские буквы и цифру | tester12 | Success! | FAIL
+99 Ввести пароль, содержащий заглавные латинские буквы и цифру | TESTER12 | Success! | FAIL
+100 Ввести пароль только из  цифр | 12345 | Success! | FAIL
+101 Ввести пароль, содержащий 1 букву кириллицей | Г | Success! | FAIL
+102 Ввести пароль, содержащий символ "-" | Test-test12 | Success! | FAIL
+103 Ввести пароль, содержащий символ "_" | Test_test12 | Success! | FAIL
+104 Ввести пароль, содержащий только спецcимволы | /*/*/*/*/*/ | Success! | FAIL
+105 Ввести пароль, содержащий: заглавную букву, строчные буквы и цифру и пробел | Test test1 | Success! | FAIL
+106 Ввести только пробелы | Success! | FAIL
+107 Ввести пароль длиной в 4 символа, содержащий: 1 заглавную, 1 строчную букву и 2 цифры | Te12 | Success! | FAIL
+108 Ввести пароль длиной в 17 символов, содержащий: заглавную, строчные буквы и цифры | Тesttesttestte123 | Success! | FAIL
+109 Ввести в поле Password скрипт <script>alert(123)</script> | <script>alert(123)</script> | Success! | FAIL
