@@ -1,4 +1,4 @@
-Bug Report
+Bug Report 1.1
 
 Login page: The button 'Submit' is shifted to the right
 
@@ -16,5 +16,49 @@ Windows 10
 Google Chrome v.90.0.4430.93
 
 >============================================================
+Bug Report 1.2
 
+Login page: Неправильное написание сообщения в красной рамке при оставлении всех полей пустыми
+
+Description
+*Steps to reproduce:*
+
+Open the login page http://itcareer.pythonanywhere.com/
+
+*Expected result:* Должно появляться сообщение "Error: All Fields are Required"
+
+*Actual result:* Появляется сообщение "Error: Error: All Fields are Required"
+
+*Severity*
+Trivial
+
+*Environment*
+Windows 10
+Google Chrome v.90.0.4430.93
+
+>============================================================
+Bug Report 1.3
+
+Login page: После нажатия "Submit" с незаполненными полями при обновлении страницы сообщение "Error: Error: All Fields are Required" не исчезает
+
+*Pre condition*
+1. Открыть сайт http://itcareer.pythonanywhere.com/
+
+Description
+*Steps to reproduce:*
+1. Оставить все поля страницы регистрации пустыми
+2. Нажать "Submit"
+
+*Expected result:* Сообщение "Error: Error: All Fields are Required" должно исчезнуть
+
+*Actual result:* Сообщение "Error: Error: All Fields are Required" не исчезает
+
+*Severity*
+Minor
+
+*Environment*
+Windows 10
+Google Chrome v.90.0.4430.93
+
+>============================================================
 
