@@ -62,3 +62,27 @@ Google Chrome v.90.0.4430.93
 
 >============================================================
 
+Bug Report 1.4
+
+Login page: При введении имени из двух символов появляется сообщение об ошибке
+
+*Pre condition*
+1. Открыть сайт http://itcareer.pythonanywhere.com/
+
+Description
+*Steps to reproduce:*
+1. Ввести в поле "Name" имя латинскими буквами 
+2. Нажать "Submit"
+
+*Expected result:* поле "Name" должно принять 2 символа 
+
+*Actual result:* Появляется сообщение Появляется сообщение "Error: Error: All Fields are Required"
+
+*Severity*
+Blocker
+
+*Environment*
+Windows 10
+Google Chrome v.90.0.4430.93
+
+>============================================================
